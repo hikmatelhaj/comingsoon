@@ -1,0 +1,56 @@
+<html>
+
+<head><title>Coming soon...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="animation"></div>
+    <!-- PUT HERE YOUR LOGO, if you see that it's going to much central and you want to put the picture higher,
+then you need to go on line 40 css and change top: 50%; to a lower percentage and play alittle bit
+!-->
+    <div class="wrappicture">
+        <img src="download.png" height="150" width="500">
+    </div>
+    <div class="wrapper">
+        <div class="typed">
+            <h1> <span class="anim"></span> </h1>
+        </div>
+
+        <h3>coming soon<span class="dot">.</span></h3>
+        <br> <br> <!-- place between text and shoppy button !-->
+        <div class="icons">
+            <a href="https://shoppy.gg/" target="_blank" ><img src="https://shoppy.gg/images/shoppy-icon.svg" width="150" height="50" class="rounded-corners"></a>
+        </div>
+    </div>
+
+
+
+    <script src="particles.js-master/particles.js"></script>
+    <script src="script.js" > </script>
+
+    <script type="module">
+        import Typed from './typed.js';
+        var typed = new Typed('.anim', {
+            strings: [
+                '** replace **',
+                'replace replace replace',
+                '**replace**',
+                'replace replace replace',
+                '** replace ****'
+            ],
+            /* change here the speed of the typing */
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+</body>
+
+
+
+
+</html>

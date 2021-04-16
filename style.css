@@ -1,0 +1,153 @@
+
+canvas {
+  display: block;
+}
+
+#animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222222; /* background page */
+}
+
+
+body {
+  background: #00091B;
+  color: #fff;
+  margin: 0;
+}
+
+img.rounded-corners {
+  border-radius: 30px;
+
+}
+
+@keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+
+}
+
+@-webkit-keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+
+}
+
+.wrappicture {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* delete the 3 lines under here to delete the animation at the start */
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* delete the 3 lines under here to delete the animation at the start */
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.dot {
+  color: #4FEBFE;
+}
+
+p {
+  text-align: center;
+  margin: 18px;
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+
+}
+
+.icons {
+  text-align: center;
+
+}
+
+.icons i {
+  color: #00091B;
+  background: #fff;
+  height: 15px;
+  width: 15px;
+  padding: 13px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  transition: all 200ms ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.icons i:hover, .icons i:active {
+  color: #fff;
+  background: none;
+  cursor: pointer !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-decoration: none;
+
+}
+
+.header-area {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.header-area h2 {
+  color: chartreuse;
+}
+.moving {
+  color: yellow;
+  border-right:4px solid yellow;
+  animation: type 1s steps(15), blinkTextCursor 650ms steps(15) infinite normal;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15.5ch;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 15ch;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: yellow;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
